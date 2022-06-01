@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { HoiGungBuilder } from "../index";
+import { HoiGungInvokerImpl } from "../index";
 
-const builder = new HoiGungBuilder();
+new HoiGungInvokerImpl().run();
