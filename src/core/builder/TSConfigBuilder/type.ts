@@ -1,0 +1,17 @@
+export enum ECMAScriptVersion {
+    ES5 = "ES5",
+    ES6 = "ES6",
+    ES7 = "ES7",
+    ES2015 = "ES2015",
+    ES2016 = "ES2016",
+    ES2017 = "ES2017",
+    ES2018 = "ES2018",
+    ES2019 = "ES2019",
+    ES2020 = "ES2020",
+    ES2021 = "ES2021",
+    ES2022 = "ES2022",
+    ESNext = "ESNext",
+    DOM = "DOM",
+    ScriptHost = "ScriptHost",
+    WebWorker = "WebWorker",
+}

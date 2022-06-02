@@ -2,12 +2,22 @@
     "name": "hoigung",
     "version": "1.0.0",
     "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "bin": {
+        "hoigung": "dist/bin/hoigung.js"
+    },
+    "exports": {
+        "require": "dist/index.js",
+        "import": "dist/index.mjs",
+        "types": "dist/index.d.ts"
+    },
     "license": "MIT",
     "scripts": {
         "run-script": "ts-node --project config/tsconfig.script.json",
-        "format": "pnpm run-script script/format.ts",
-        "lint": "pnpm run-script script/lint.ts",
-        "build": "pnpm run-script script/build.ts",
+        "format": "pnpm run run-script script/format.ts",
+        "lint": "pnpm run run-script script/lint.ts",
+        "build": "pnpm run run-script script/build.ts",
         "start": "ts-node --project config/tsconfig.src.json src/bin/hoigung.ts",
         "test": "TS_NODE_PROJECT='./config/tsconfig.test.json' mocha --require ts-node/register ./test/**/*.test.ts"
     },
@@ -26,6 +36,7 @@
         "manten": "0.1.0",
         "mocha": "10.0.0",
         "mock-stdin": "1.0.0",
+        "pkgroll": "1.3.1",
         "prettier": "2.6.2",
         "ts-node": "10.8.0",
         "typescript": "4.7.2"
